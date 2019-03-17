@@ -1,7 +1,3 @@
-/**
- * Шаблон фильтра
- */
-
-export default (obj) => `
-<input type="radio" id="filter-${obj.title}" name="filter" value="${obj.title}" ${obj.isChecked ? `checked` : ``}>
-<label class="trip-filter__item" for="filter-${obj.title}">${obj.title}</label>`;
+export default (filterObject) => `
+<input type="radio" id="filter-${filterObject.title}" name="filter" value="${filterObject.title}" ${filterObject.isChecked ? `checked` : ``}>
+<label class="trip-filter__item" for="filter-${filterObject.title}">${filterObject.title}</label>`;
