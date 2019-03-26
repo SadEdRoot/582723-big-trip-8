@@ -1,5 +1,5 @@
-import getFilter from './make-filter.js';
-import getTripPoint from './make-trip-point.js';
+import getFilter from './templates/get-filter.js';
+import getTripPoint from './templates/get-trip-point-templates.js';
 import {getRandomInt} from './utils';
 import {renderHTML} from './utils';
 
@@ -18,6 +18,8 @@ const filters = [
   {
     title: `past`,
   }];
+
+const route = [`Geneva`, `Amsterdam`, `Vienna`];
 
 /* возращает строку со всеми фильтрами */
 const createFilterString = (elementList) => {
